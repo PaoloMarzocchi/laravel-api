@@ -1,0 +1,43 @@
+@use './variables' as *;
+
+.admin_section {
+    background-color: rgb(39, 39, 39);
+    color: $lightest;
+
+
+    .title_section {
+        width: fit-content;
+        margin: 1rem auto 0 auto;
+        padding: 1rem 2rem;
+        color: $lightest;
+        border-radius: 10px;
+        border-bottom: 2px solid $primary;
+
+    }
+
+    .my_table {
+        text-align: center;
+        border-radius: 3px;
+
+        th {
+            background-color: $dark;
+            color: $lightest;
+            border: 2px solid $primary;
+        }
+
+        td {
+            border: 1px solid $dark;
+        }
+    }
+
+    .my_form {
+        border: 2px solid $primary;
+        padding: 2rem;
+        border-radius: 5px;
+
+        input,
+        textarea {
+            border: 1px solid $dark;
+        }
+    }
+}

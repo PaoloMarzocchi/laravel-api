@@ -1,0 +1,11 @@
+@use '~bootstrap/scss/bootstrap';
+@use './partials/site-header';
+@use './partials/variables' as *;
+@use './partials/utilities-commons';
+@use './partials/admin-sections';
+@use './partials/guests-sections';
+@use './partials/site-footer';
+
+body {
+    font-family: "Poppins", sans-serif;
+}

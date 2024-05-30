@@ -1,0 +1,65 @@
+@use './variables' as *;
+
+/* #region Common */
+
+
+/* #endregion */
+
+/* #region Utilities */
+
+/* #region Button */
+
+@mixin btn_hover {
+    color: $lightest;
+
+    &:hover,
+    &:focus {
+
+        filter: opacity(0.8);
+        color: $lightest;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.my_active {
+
+    color: $primary;
+    font-weight: bold;
+
+}
+
+
+.my_danger {
+    background-color: $primary;
+    @include btn_hover;
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+    }
+}
+
+.my_success {
+    background-color: $success;
+    @include btn_hover;
+
+    &:hover,
+    &:focus {
+        background-color: $success;
+    }
+}
+
+.my_dark {
+    background-color: $dark;
+    @include btn_hover;
+
+    &:hover,
+    &:focus {
+        background-color: $dark;
+    }
+}
+
+/* #endregion */
+
+
+/* #endregion */

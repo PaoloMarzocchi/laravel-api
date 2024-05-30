@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+.site-footer {
+    background-color: $primary;
+    background-image: linear-gradient(black 0.5%, $primary);
+
+    color: $lightest;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+/* background-image: linear-gradient(var(--boolz-background-primary) 10%, var(--boolz-background-secondary) 10%);
+ */
