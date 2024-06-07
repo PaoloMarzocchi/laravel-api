@@ -24,6 +24,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+/* Route::get('/mailable', function(){
+    $data= Lead::find(1);
+    return new App\Mail\NewLeadMessage($data);
+}) */
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
